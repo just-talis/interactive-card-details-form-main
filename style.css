@@ -1,111 +1,119 @@
 :root {
-    /* Color */
-    --clr-violett-100: hsl(270, 3%, 87%);
-    --clr-violett-200: hsl(279, 6%, 55%);
-    --clr-violett-500: hsl(278, 94%, 30%);
-    --clr-violett-900: hsl(278, 68%, 11%);
-    --clr-white: hsl(0, 0%, 100%);
-    --clr-red-500: hsl(0, 100%, 66%);
-    --clr-blue-500: hsl(249, 99%, 64%);
-    /* Font */
-    --fs-100: 0.75rem;
-    --fs-200: 0.8125rem;
-    --fs-300: 0.875rem;
-    --fs-400: 0.9375rem;
-    --fs-500: 1rem;
-    --fs-600: 1.125rem;
-    --fs-700: 1.25rem;
-    --fs-800: 1.5rem;
-    --fs-900: 2rem;
-    /* Margin */
-    --mb-100: 1rem;
-    --mb-200: 1.5rem;
-    --mb-300: 2rem;
-    --mb-400: 2.5rem;
-    --mb-500: 3rem;
+  /* Color */
+  --clr-violett-100: hsl(270, 3%, 87%);
+  --clr-violett-200: hsl(279, 6%, 55%);
+  --clr-violett-500: hsl(278, 94%, 30%);
+  --clr-violett-900: hsl(278, 68%, 11%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-red-500: hsl(0, 100%, 66%);
+  --clr-blue-500: hsl(249, 99%, 64%);
+  /* Font */
+  --fs-100: 0.75rem;
+  --fs-200: 0.8125rem;
+  --fs-300: 0.875rem;
+  --fs-400: 0.9375rem;
+  --fs-500: 1rem;
+  --fs-600: 1.125rem;
+  --fs-700: 1.25rem;
+  --fs-800: 1.5rem;
+  --fs-900: 2rem;
+  /* Margin */
+  --mb-100: 1rem;
+  --mb-200: 1.5rem;
+  --mb-300: 2rem;
+  --mb-400: 2.5rem;
+  --mb-500: 3rem;
 }
 
-  /* Utility Class */
+/* Utility Class */
 
-  .mb-100 {
-    margin-bottom: var(--mb-100);
-  }
+.mb-100 {
+  margin-bottom: var(--mb-100);
+}
 
-  .mb-200 {
-    margin-bottom: var(--mb-200);
-  }
+.mb-200 {
+  margin-bottom: var(--mb-200);
+}
 
-  .mb-300 {
-    margin-bottom: var(--mb-300);
-  }
+.mb-300 {
+  margin-bottom: var(--mb-300);
+}
 
-  .mb-400 {
-    margin-bottom: var(--mb-400);
-  }
+.mb-400 {
+  margin-bottom: var(--mb-400);
+}
 
-  .mb-500 {
-    margin-bottom: var(--mb-500);
-  }
+.mb-500 {
+  margin-bottom: var(--mb-500);
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 16px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
 }
 
 body {
-    min-width: 375px;
-    min-height: 100vh;
+  min-width: 375px;
+  min-height: 100vh;
 }
 
 .visually-hidden {
-    width: 1px;
-    height: 1px;
-    position: absolute;
-    left: auto;
-    top: 0;
-    border: 0;
-    overflow: hidden;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  left: auto;
+  top: 0;
+  border: 0;
+  overflow: hidden;
 }
 
 .app {
-    min-height: 100vh;
-    display: flex;
+  min-height: 100vh;
+  display: flex;
 }
 
 .card__displayer {
-    width: 30%;
-    min-height: 100vh;
-    position: relative;
-    background-image: url("images/bg-main-desktop.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+  width: 30%;
+  min-height: 100vh;
+  position: relative;
+  background-image: url("images/bg-main-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card {
-    width: 17.8125rem;
-    width: clamp(17.8125rem, 14.247359154929578rem + 15.211267605633802vw, 27.9375rem);
-    height: 9.8125rem;
-    height: clamp(9.8125rem, 7.875880281690141rem + 8.262910798122066vw, 15.3125rem);
-    position: absolute;
-    font-size: var(--fs-300);
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    color: var(--clr-white);
-    border-radius: 0.625rem;
+  width: 17.8125rem;
+  width: clamp(
+    17.8125rem,
+    14.247359154929578rem + 15.211267605633802vw,
+    27.9375rem
+  );
+  height: 9.8125rem;
+  height: clamp(
+    9.8125rem,
+    7.875880281690141rem + 8.262910798122066vw,
+    15.3125rem
+  );
+  position: absolute;
+  font-size: var(--fs-300);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: var(--clr-white);
+  border-radius: 0.625rem;
 }
 
 .card_front {
-    padding: 2rem;
-    left: 35%;
-    top: 15%;;
-    background-image: url("images/bg-card-front.png");
-    background-size: cover;
+  padding: 2rem;
+  left: 35%;
+  top: 15%;
+  background-image: url("images/bg-card-front.png");
+  background-size: cover;
 }
 
 .card__number {
@@ -116,7 +124,11 @@ body {
 
 .card_front p {
   font-size: 0.5625rem;
-  font-size: clamp(0.5625rem, 0.3644366197183099rem + 0.8450704225352111vw, 1.125rem);
+  font-size: clamp(
+    0.5625rem,
+    0.3644366197183099rem + 0.8450704225352111vw,
+    1.125rem
+  );
   display: flex;
   justify-content: space-between;
 }
@@ -191,7 +203,8 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
-input[name="Month"], input[name="Year"] {
+input[name="Month"],
+input[name="Year"] {
   width: 45%;
 }
 
@@ -209,7 +222,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-transform: none;
   letter-spacing: 0;
   color: var(--clr-red-500);
-  visibility:hidden;
+  visibility: hidden;
 }
 
 .input__area.error .error-message {
@@ -240,7 +253,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background: grey;
 }
 
-@media screen and (max-width:1160px) {
+@media screen and (max-width: 1160px) {
   :root {
     /* Margin */
     --mb-100: 0.2rem;
@@ -258,7 +271,8 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 1rem;
   }
 
-  .card__displayer, .form {
+  .card__displayer,
+  .form {
     width: 100%;
   }
 
@@ -295,7 +309,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
   .inputs__container {
     width: 90%;
   }
