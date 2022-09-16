@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Website Data Info -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Javascript Link -->
+    <script src="script.js" defer></script>
+    <!-- Fontstyle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <!-- Website Title -->
+    <title>Frontend Mentor | Credit Card</title>
+</head>
+
+<body>
+    <header class="visually-hidden">
+        <h1 class="visually-hidden">Frontend Mentor | Credit Card Validation</h1>
+    </header>
+
+    <main class="app">
+        <section class="card__displayer">
+            <h2 class="visually-hidden">Card Displayer Section</h2>
+            <div class="card card_front">
+                <div class="mb-500">
+                    <img src="images/card-logo.svg" alt="Credit Card Company Logo">
+                </div>
+                <div class="card__info">
+                    <h3 id="cardNum" class="card__number mb-200">0000 0000 0000 0000</h3>
+                    <p>
+                        <span id="cardHolder">Jane Appleseed</span>
+                        <span>
+                            <span id="cardExpiryMonth">00</span>/<span id="cardExpiryYear">0HHHH0</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card card_back">
+                <span class="card__cvc" id="cardCVC">000</span>
+            </div>
+        </section>
+        <form id="confirmationForm" class="form">
+            <fieldset id="id-inputsContainer" class="inputs__container">
+                <div class="input__area">
+                    <label for="in-holderName">Cardholder Name</label>
+                    <input type="text" id="in-holderName" name="Cardholder Name" placeholder="e.g. Jane Appleseed">
+                    <small class="error-message">Wrong format, texts only</small>
+                </div>
+                <div class="input__area">
+                    <label for="in-cardNumber">Card Number</label>
+                    <input type="text" id="in-cardNumber" name="Card Number" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+                    <small class="error-message">Wrong format, numbers only</small>
+                </div>
+                <div class="input__area_group mb-100">
+                    <div class="input__area">
+                        <label for="in-cardExpiryMonth">Exp. Date (MM/YY)</label>
+                        <input type="text" id="in-cardExpiryMonth" name="Month" placeholder="MM" maxlength="2">
+                        <input type="text" id="in-cardExpiryYear" name="Year" placeholder="YY" maxlength="2">
+                        <small class="error-message">Can't be blank</small>
+                    </div>
+                    <div class="input__area">
+                        <label for="in-cardCVC">CVC</label>
+                        <input type="text" id="in-cardCVC" name="cvc" placeholder="e.g. 123" maxlength="3">
+                        <small class="error-message">Can't be blank</small>
+                    </div>
+                </div>
+                <button id="submitBtn" type="submit" class="btn btn-submit" disabled>Confirm</button>
+            </fieldset>
+            <section id="id-thankyouContainer" class="thankyou__section visually-hidden">
+                <img src="images/icon-complete.svg" alt="icon checklist" class="mb-200">
+                <h2 class="mb-100">Thank You!</h2>
+                <p class="mb-300">We've added your card details</p>
+                <button type="submit" class="btn btn-submit">Continue</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
